@@ -1,3 +1,4 @@
+const FAVORITE_STUDENT = process.env.NAME;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -5,7 +6,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log("Microservices rock!");
+    console.log(`${FAVORITE_STUDENT} is the best!`);
     await sleep(5000);
   }
 }
